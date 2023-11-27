@@ -1,0 +1,8 @@
+#Static arrays have a fixed size
+
+class StaticArray:
+	def __init__(self, value):
+
+array = []
+
+if(
