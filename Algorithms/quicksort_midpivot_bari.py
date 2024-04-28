@@ -5,8 +5,7 @@ def quick_sort(l,h):
         quick_sort(m+1, h) # Right side
 
 def partition(L,H):
-        pivot = A[L] # 1st element
-        #pivot = A[(L+H)//2] # middle element - RecursionError: maximum recursion depth exceeded?
+        pivot = A[(L+H)//2] # middle element - RecursionError: maximum recursion depth exceeded?
         i = L
         j = H
         while(i<j): # base case
@@ -19,9 +18,9 @@ def partition(L,H):
         A[L], A[j]  = A[j], A[L] #update pivot
         return j #new pivots index ~ partitioning position
 
-#A = [10,16,8,12,15,6,3,9,5] #pass
-#A = [3,5,2,1,4] #Fail
-A = [3,1,2] #Fail
+#A = [10,16,8,12,15,6,3,9,5]
+A = [3,5,2,1,4]
+
 print("input =", A)
 l = 0
 h = len(A)-1
